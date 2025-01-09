@@ -35,7 +35,7 @@ header h1{
 
 h1 span{
     font-weight: 400;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 nav{
@@ -108,7 +108,7 @@ main{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
 }
 
-.card h2{
+.country-info h2{
     display: flex;
     justify-self: center;
     text-align: center;
