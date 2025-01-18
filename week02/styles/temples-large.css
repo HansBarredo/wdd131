@@ -1,0 +1,43 @@
+@media only screen and (min-width: 40em) {
+    body{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #menu{
+        display: none;
+    }
+    ul.big{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    ul.small{
+        display: none;
+    }
+    .image-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        text-align: center;
+        margin: 1rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: aquamarine;
+        color: black;
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    li > a:hover{
+        color: white;
+    }
+}
