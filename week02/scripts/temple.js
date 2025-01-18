@@ -11,17 +11,12 @@ hambutton.addEventListener('click', () => {
 function checkScreenSize() {
   const screenWidthInPixels = window.innerWidth;
   const thresholdWidth = 40 * 16; 
-
   const nav = document.querySelector('#navigation'); // Get the element to check for hide class
 
   if (screenWidthInPixels >= thresholdWidth) {
-    if (nav.classList.contains('hide')) {
-      nav.classList.remove('hide');
-    }
+    nav.classList.remove('hide');
   } else {
-    if (!nav.classList.contains('hide')) {
-      nav.classList.add('hide');
-    }
+    nav.classList.add('hide');
   }
 }
 
