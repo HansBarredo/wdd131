@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", serif;
+}
+main{
+    text-align: center;
+}
+main h1{
+    margin: 1rem;
+}
+header{
+    position: relative;
+}
+nav{
+    display: flex;
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
+nav h1{
+    width: 100%;
+    align-self: center;
+}
+
+#menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: #000;
+	
+}
+
+#menu::before{
+    content: "≡";
+}
+
+ul a{
+    display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+    background-color: aquamarine;
+}
+
+li{
+    display: block;
+}
+
+.image-gallery{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+
+.show li {
+	display: none;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+#navigation.hide{
+    display: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.big{
+    display: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:aquamarine;
+    color: black;
+    font-size: small;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+}
+
+
+
+@media only screen and (min-width: 40em) {
+    body{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #menu{
+        display: none;
+    }
+    ul.big{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    ul.small{
+        display: none;
+    }
+    .image-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        text-align: center;
+        margin: 1rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: aquamarine;
+        color: black;
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+    }
+}
