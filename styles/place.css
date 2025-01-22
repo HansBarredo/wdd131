@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;0,900;1,100;1,200;1,400;1,700;1,900&display=swap');
+
 :root{
     --primary-color: #F6CC15;
     --secondary-color: #C92116;
@@ -5,6 +7,7 @@
     --accent-color1: #6F87A6;
     --accent-color2: #D2DAE7;
 }
+
 
 *{
     margin: 0;
@@ -95,7 +98,7 @@ footer{
 {
     body{
         width: 100%;
-        height: auto;
+        height: 100vh;
         margin: 0;
         padding: 0;
         position: relative;
@@ -111,7 +114,13 @@ footer{
 
     .hero{
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+
+    picture{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .info{
@@ -130,6 +139,17 @@ footer{
         padding: 10px 30px;
         transform: translate(-15px, 15px);
     }
+    #weather h2::after {
+        content: ""; 
+        display: inline-block; 
+        width: 2rem; 
+        height: 2rem;
+        margin-left: 0.5rem; 
+        background-image: url('../images/partly-cloudy.svg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
 
     #data{
         position: absolute;
@@ -139,7 +159,7 @@ footer{
     #weather{
         position: absolute;
         right: 2rem;
-        top:20rem;
+        top:30rem;
     }
 
     .data-list{
