@@ -1,0 +1,160 @@
+:root{
+    --primary-color: #F6CC15;
+    --secondary-color: #C92116;
+    --text-color: #161E4D;
+    --accent-color1: #6F87A6;
+    --accent-color2: #D2DAE7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: var(--text-color);
+    font-family: "Poppins", serif;
+}
+
+header{
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-bottom: 1rem solid var(--secondary-color);
+}
+
+
+.hero{
+    width: 100%;
+    height: auto;
+}
+
+img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+picture{
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color1);
+}
+
+
+.data-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+div h2{
+    padding: 0.5rem 0;
+}
+
+dt, dd{
+    margin: 0;
+    padding: 0.5rem;
+    font-size: small;
+}
+
+dt{
+    font-weight: bold;
+    text-align: right;
+    width: 50%;
+}
+
+dd{
+    text-align: left;
+    width: 50%;
+}
+
+#weather-icon{
+    width: 8rem;
+    height:auto;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: small;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 40em)
+{
+    body{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    main{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero{
+        width: 100%;
+        height: auto;
+    }
+
+    .info{
+        width: 22rem;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.725);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        align-content: center;
+        font-size: small;
+    }
+
+    .info h2{
+        background-color: var(--primary-color);
+        text-align: left;
+        width: 75%;
+        padding: 10px 30px;
+        transform: translate(-15px, 15px);
+    }
+
+    #data{
+        position: absolute;
+        left: 2rem;
+        top: 10rem;
+    }
+    #weather{
+        position: absolute;
+        right: 2rem;
+        top:20rem;
+    }
+
+    .data-list{
+        margin-top:1rem ;
+    }
+
+    #weather-icon{
+        width: 8rem;
+        height:auto;
+        margin-top: 0.5rem;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
