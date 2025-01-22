@@ -177,4 +177,8 @@ footer{
         height: 100%;
         object-fit: cover;
     }
+
+    #weather-icon{
+        display: none;
+    }
 }
