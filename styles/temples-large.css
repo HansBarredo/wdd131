@@ -1,52 +1,81 @@
 @media only screen and (min-width: 40em) {
-    body{
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-    #menu{
-        display: none;
-    }
-    ul.big{
-        display: flex;
-        justify-content: end;
-        width: 100%;
-    }
+  body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  #menu {
+    display: none;
+  }
+  ul.big {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
 
-    ul.small{
-        display: none;
-    }
-    .image-gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        text-align: center;
-        margin: 1rem;
-    }
-    footer{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        background-color: aquamarine;
-        color: black;
-        font-size: small;
-        justify-content: center;
-        text-align: center;
-        margin-top: 1rem;
-        padding: 0.5rem 0;
-    }
+  ul.small {
+    display: none;
+  }
+  .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: aquamarine;
+    color: black;
+    font-size: small;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+  }
 
-    li > a:hover{
-        color: white;
-    }
-    figcaption{
-        font-size: 1rem;
-    }
-    img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+  li > a:hover {
+    color: white;
+  }
+  figcaption {
+    font-size: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 15px;
+    justify-content: center;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem 0;
+    font-size: small;
     
+  }
+
+  dt {
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  dd {
+    margin: 0;
+    text-align: left;
+  }
+
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
 }

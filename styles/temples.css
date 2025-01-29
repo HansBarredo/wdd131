@@ -110,8 +110,38 @@ figcaption{
     margin-bottom: 0.5rem;
 }
 
-img{
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 15px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1rem 0;
+    font-size: small;
+    
+  }
+
+  dt {
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  dd {
+    margin: 0;
+    text-align: left;
+  }
+
+  .card img {
     width: 100%;
-    height: auto;
+    height: 250px;
     object-fit: cover;
 }
