@@ -126,8 +126,8 @@ homeLink.addEventListener("click", (event) => {
   renderCards(temples);   
 });
 
-const oldTemplesLink = document.getElementById("old-temples");
-const newTemplesLink = document.getElementById("new-temples");
+const oldTemplesLink = document.getElementsByClassName("old-temples");
+const newTemplesLink = document.getElementsByClassName("new-temples");
 
 function filterTemples(isOld) {
   let filteredTemples = temples.filter(temple => {
@@ -150,8 +150,8 @@ newTemplesLink.addEventListener("click", () => {
 });
 
 
-const bigTemplesLink = document.getElementById("large-temples");
-const smallTemplesLink = document.getElementById("small-temples");
+const bigTemplesLink = document.getElementsByClassName("large-temples");
+const smallTemplesLink = document.getElementsByClassName("small-temples");
 
 function filterTemplesSize(isLarge) {
   let filteredTemples = temples.filter(temple => {
