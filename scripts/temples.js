@@ -1,11 +1,16 @@
 const mainnav = document.querySelector('.small');
 const hambutton = document.querySelector('#menu');
-const branding = document.querySelector('#navigation');
+const brand = document.querySelector('#branding');
+
+document.addEventListener("DOMContentLoaded", () => {
+  mainnav.classList.remove("show");
+  hambutton.classList.remove("show");
+});
 
 hambutton.addEventListener('click', () => {
   mainnav.classList.toggle('show');
   hambutton.classList.toggle('show');
-  branding.classList.toggle('hide');
+  brand.classList.toggle('hide');
 });
 
 const modified = document.querySelector("#modified");
