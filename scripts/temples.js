@@ -93,7 +93,6 @@ const temples = [
     imageUrl:
       "https://www.churchofjesuschrist.org/imgs/4052d9f8ff0e11edb9dbeeeeac1e97aea1b93079/full/640%2C/0/default"
   }
-  // Add more temple objects here...
 ];
 
 
@@ -126,8 +125,8 @@ homeLink.addEventListener("click", (event) => {
   renderCards(temples);   
 });
 
-const oldTemplesLink = document.getElementsByClassName("old-temples");
-const newTemplesLink = document.getElementsByClassName("new-temples");
+const oldTemplesLink = document.querySelector(".old-temples");
+const newTemplesLink = document.querySelector(".new-temples");
 
 function filterTemples(isOld) {
   let filteredTemples = temples.filter(temple => {
@@ -150,8 +149,8 @@ newTemplesLink.addEventListener("click", () => {
 });
 
 
-const bigTemplesLink = document.getElementsByClassName("large-temples");
-const smallTemplesLink = document.getElementsByClassName("small-temples");
+const bigTemplesLink = document.querySelector(".large-temples");
+const smallTemplesLink = document.querySelector(".small-temples");
 
 function filterTemplesSize(isLarge) {
   let filteredTemples = temples.filter(temple => {
@@ -171,4 +170,20 @@ bigTemplesLink.addEventListener("click", () => {
 
 smallTemplesLink.addEventListener("click", () => {
   filterTemplesSize(false); 
+});
+
+const smallLinks = document.querySelectorAll('.small a');
+smallLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (link.classList.contains('old-temples')) {
+      filterTemples(true);
+    } else if (link.classList.contains('new-temples')) {
+      filterTemples(false);
+    } else if (link.classList.contains('large-temples')) {
+      filterTemplesSize(true);
+    } else if (link.classList.contains('small-temples')) {
+      filterTemplesSize(false);
+    }
+  });
 });
