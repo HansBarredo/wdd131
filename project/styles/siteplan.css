@@ -1,0 +1,75 @@
+:root {
+    /* CSS HEX */
+    --Night: #0A0B0B;
+    --Satin-Sheen-Gold: #C49B23;
+    --Madder: #A5121A;
+    --Off-White: #FAF9F6;
+
+    --bebas-neue-font-family: 'Bebas Neue', sans-serif;
+
+    --nunito-font-family: 'Nunito', sans-serif;;
+
+
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    place-items: center;
+
+}
+
+h1, h2 {
+    font-family: var(--bebas-neue-font-family) ;
+    color: var(--Madder);
+}
+
+p {
+    color: var(--Night);
+}
+
+
+.titleEx,
+.paragraphEx {
+    font-family: var(--bebas-neue-font-family);
+    color: var(--Satin-Sheen-Gold);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bodyTextEx {
+    font-family: var(--nunito-font-family);
+    color: var(--Satin-Sheen-Gold);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.bodyEx  p {
+    width: 200px;
+    height: 30px;
+    background-color: var(--Off-White);
+    color: var(--Night);
+    text-align: center;
+}
+
+.headerEx  h1 {
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+    background-color: var(--Night);
+    color: var(--Madder);
+    text-align: center;
+}
+
+.footerEx  p {
+    width: 200px;
+    height: 30px;
+    background-color: var(--Night);
+    color: var(--Satin-Sheen-Gold);
+    text-align: center;
+}
+
+img {
+    width: 25%;
+}
