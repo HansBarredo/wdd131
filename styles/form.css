@@ -164,7 +164,16 @@ footer span {
     }
 
     input[type="submit"]{
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #summary{
+        width: 50%;
+        height: 100vh;
+        margin: auto;
+        padding: 0;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
 }
