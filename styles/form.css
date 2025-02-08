@@ -89,7 +89,7 @@ textarea{
 	margin-left: 5px;
 	display: flex;
 	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+	caret-color: rgba(0, 0, 0, 0); 
 }
 
 .stars > label:hover {
@@ -110,7 +110,6 @@ input[type="submit"]{
     padding: 0.5rem;
     margin-top: 0.5rem;
     width: 100%;
-
 }
 
 footer{
@@ -146,4 +145,24 @@ main p {
 
 footer span {
     color: black;
+}
+
+@media only screen and (min-width: 40em)
+{
+    body{
+        width: 50%;
+        height: 100%;
+        margin: auto;
+        padding: 0;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+        form{
+        padding: 0 2rem;
+    }
+
+    input[type="submit"]{
+        margin-bottom: 1rem;
+    }
+
 }
