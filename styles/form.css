@@ -60,6 +60,8 @@ input[type="text"]{
 }
 
 input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
     margin-right: 0.5rem;
     vertical-align: middle;
 }
@@ -124,7 +126,7 @@ footer{
 }
 
 span{
-    color: rgb(0, 68, 255);
+    color: rgb(0, 41, 155);
     font-weight: 400;
 }
 
