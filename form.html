@@ -29,48 +29,48 @@
           name="stars"
           value="5"
           required
-        /><label for="fivestar"></label>
+        ><label for="fivestar"></label>
         <input
           type="radio"
           id="fourstar"
           name="stars"
           value="4"
           required
-        /><label for="fourstar"></label>
+        ><label for="fourstar"></label>
         <input
           type="radio"
           id="threestar"
           name="stars"
           value="3"
           required
-        /><label for="threestar"></label>
+        ><label for="threestar"></label>
         <input
           type="radio"
           id="twostar"
           name="stars"
           value="2"
           required
-        /><label for="twostar"></label>
+        ><label for="twostar"></label>
         <input
           type="radio"
           id="onestar"
           name="stars"
           value="1"
           required
-        /><label for="onestar"></label>
+        ><label for="onestar"></label>
       </div>
 
-      <label for="date">Anticipated Completion Date <input type="date" name="completeDate"></label>
+      <label for="date">Anticipated Completion Date <input type="date" id="date" name="completeDate"></label>
 
       <label>Which feature did you find useful in the product? <br> (check all that apply) <br></label>
-      <label for="checkbox"><input type="checkbox" name="yes" value="Durability" id="durability" />Durability</label>
-      <label for="checkbox"><input type="checkbox" name="yes1" value="Ease of Use" id="easeOfUse" />Ease of Use</label>
-      <label for="checkbox"><input type="checkbox" name="yes2" value="Performance" id="performace" />Performance</label>
-      <label for="checkbox"><input type="checkbox" name="yes3" value="Design" id="design" />Design</label>
+      <label for="durability" id="durability-label" class="checkbox"><input type="checkbox" name="yes1" value="Durability" id="durability">Durability</label>
+      <label for="easeOfUse" id="easeOfUse-label" class="checkbox"><input type="checkbox" name="yes2" value="Ease of Use" id="easeOfUse">Ease of Use</label>
+      <label for="performace" id="performace-label" class="checkbox"><input type="checkbox" name="yes3" value="Performance" id="performace">Performance</label>
+      <label for="design" id="design-label" class="checkbox"><input type="checkbox" name="yes4" value="Design" id="design">Design</label>
 
-      <label for="">Written Review <span>(Optional)</span></label>
+      <label for="review">Written Review <span>(Optional)</span></label>
       <textarea name="review" id="review"></textarea>
-      <label for="name">Full Name <span>(Optional)</span><input type="text" name="fullname" placeholder="Full Name" id="fullName"></label>
+      <label for="fullname" id="fullname-label">Full Name <span>(Optional)</span><input type="text" name="fullname" placeholder="Full Name" id="fullname"></label>
       <input type="submit" value="Post Review" id="submit">
     </form>
     <footer>
