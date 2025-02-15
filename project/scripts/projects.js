@@ -35,7 +35,7 @@ const buildings = [
 function renderCards(buildings) {
   const html = buildings.map(
     (building) => `<section class="card">
-    <div></div>
+    <div class='project-fill'></div>
     <h3>${building.buildingName}</h3>
     <img src="${building.imageUrl}" alt="Photo of the ${building.buildingName}" loading="lazy" class="image" draggable="false">
     </section>`

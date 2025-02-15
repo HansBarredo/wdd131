@@ -388,6 +388,16 @@ main {
   overflow-y: hidden;
 }
 
+.card div.project-fill {
+  position: absolute;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0) 100%);
+  min-height: 55vh;
+  width: 100%;
+  z-index: 2;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .service {
   display: flex;
   flex-direction: column;
@@ -662,7 +672,17 @@ main {
 .card div {
   position: absolute;
   background-image: linear-gradient(rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0) 100%);
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 2;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.card div.project-fill {
+  position: absolute;
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 30%, rgb(0, 0, 0) 100%);
+  min-height: 50vh;
   width: 100%;
   z-index: 2;
   overflow-x: auto;
