@@ -1,36 +1,35 @@
 const buildings = [
   {
     buildingName: "Tower McAllister",
-    location: "Aba, Nigeria",
+    location: "Pasig, Philippines",
     imageUrl:
       "assets/build1.jpg"
   },
   {
     buildingName: "Cottage",
-    location: "Manti, Utah, United States",
+    location: "Rizal, Philippines",
     imageUrl:
       "assets/build2.jpg"
   },
   {
     buildingName: "McKinley Villa",
-    location: "Payson, Utah, United States",
+    location: "Ilocos Sur, Philippines",
     imageUrl:
       "assets/build3.jpg"
   },
   {
-    buildingName: "Balay Higlands",
-    location: "Yigo, Guam",
+    buildingName: "Balay Highlands",
+    location: "Baguio, Philippines",
     imageUrl:
       "assets/build4.jpg"
   },
   {
     buildingName: "D.C. House",
-    location: "Kensington, Maryland, United States",
+    location: "Rizal, Philippines",
     imageUrl:
       "assets/build5.jpg"
   }
 ];
-
 
 
 function renderCards(buildings) {

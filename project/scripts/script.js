@@ -1,31 +1,31 @@
 const buildings = [
     {
       buildingName: "Tower McAllister",
-      location: "Aba, Nigeria",
+      location: "Pasig, Philippines",
       imageUrl:
         "assets/build1.jpg"
     },
     {
       buildingName: "Cottage",
-      location: "Manti, Utah, United States",
+      location: "Rizal, Philippines",
       imageUrl:
         "assets/build2.jpg"
     },
     {
       buildingName: "McKinley Villa",
-      location: "Payson, Utah, United States",
+      location: "Ilocos Sur, Philippines",
       imageUrl:
         "assets/build3.jpg"
     },
     {
-      buildingName: "Balay Higlands",
-      location: "Yigo, Guam",
+      buildingName: "Balay Highlands",
+      location: "Baguio, Philippines",
       imageUrl:
         "assets/build4.jpg"
     },
     {
       buildingName: "D.C. House",
-      location: "Kensington, Maryland, United States",
+      location: "Rizal, Philippines",
       imageUrl:
         "assets/build5.jpg"
     }
@@ -35,48 +35,48 @@ const buildings = [
     {
       service: "Architectural and Engineering Design",
       textContent: "Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.",
-      imageUrl:"https://images.unsplash.com/photo-1542621334-a254cf47733d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8"
+      imageUrl:"assets/service1.jpg"
     },
     {
       service: "Consultancy",
       textContent: "Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.",
-      imageUrl:"https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageUrl:"assets/service2.jpg"
     },
     {
       service: "Construction",
       textContent: "Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.",
-      imageUrl:"https://images.unsplash.com/photo-1694521787162-5373b598945c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageUrl:"assets/service3.jpg"
     },
   ];
 
   const teams = [
     {
       teamName: "Alexander James Carter",
-      position: "Aba, Nigeria",
+      position: "Chief Architect | CEO",
       imageUrl:
         "assets/profile_4.jpg"
     },
     {
       teamName: "Ava Gabriella Fernandez",
-      position: "Manti, Utah, United States",
+      position: "Senior Engineer | COO",
       imageUrl:
         "assets/profile_5.jpg"
     },
     {
       teamName: "Ethan James Kim",
-      position: "Payson, Utah, United States",
+      position: "Head of Design",
       imageUrl:
         "assets/profile_2.jpg"
     },
     {
       teamName: "Sophia Jade Morales",
-      position: "Yigo, Guam",
+      position: "Architect",
       imageUrl:
         "assets/profile_3.jpg"
     },
     {
       teamName: "Sebastian Henry Martinez",
-      position: "Kensington, Maryland, United States",
+      position: "Civil Engineer",
       imageUrl:
         "assets/profile_1.jpg"
     }
