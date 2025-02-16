@@ -560,7 +560,8 @@ article:has(:hover) h2 {
 
 .team .card h3{
   color: var(--Madder);
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
+
 }
 
   .team .card span{
@@ -584,6 +585,11 @@ article:has(:hover) h2 {
 .team >.card > img:first-of-type{
   object-fit: cover;
   object-position: 80% 20%;
+}
+
+.team >.card > img:last-of-type{
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 @media only screen and (min-width: 40em){
