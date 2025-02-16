@@ -23,6 +23,7 @@ h1,
 h2,
 h3 {
   font-family: var(--bebas-neue-font-family);
+  line-height: 40px;
 }
 
 body {
@@ -144,6 +145,7 @@ body {
 	font-size: 32px;
 	margin-bottom: 30px;
 	text-decoration: none;
+  background-color: black;
   }
 
   ul{
@@ -269,8 +271,8 @@ nav ul li a:hover {
 
 .hero-text {
   position: absolute;
-  right: 50px;
-  top: 450px;
+  right: 45px;
+  top: 30rem;
   width: 350px;
   color: var(--Off-White);
 }
@@ -358,15 +360,16 @@ main {
   position: absolute;
   padding: 2rem;
   bottom: 2rem;
-  color: var(--Off-White);
+  color: var(--Madder);
   letter-spacing: 1px;
   z-index: 3;
+  line-height: 40px;
 }
 
 .card span{
   position: absolute;
   color: var(--Off-White);
-  bottom: 1rem;
+  bottom: 0.5rem;
   left: 0.2rem;
   padding: 2rem;
   z-index: 3;
@@ -410,6 +413,7 @@ main {
     font-size: 3rem;
     letter-spacing: 2px;
     margin-left: 1rem;
+    background-color: var(--Night);
 }
 
 article {
@@ -504,7 +508,7 @@ article:has(:hover) h2 {
 
 .team-section {
   position: relative;
-  height: 60vh;
+  min-height: 60vh;
   width: auto;
   margin-top: 3rem;
   position: relative;
@@ -527,16 +531,21 @@ article:has(:hover) h2 {
   letter-spacing: 2px;
   margin-left: 1rem;
   margin-top: 3rem;
+  background-color: var(--Night);
 }
 
 .team .card h3{
-  color: var(--Off-White);
+  color: var(--Madder);
 }
 
   .team .card span{
     color: var(--Off-White);
+    transform: translateY(10px);
+    width: 100vw;
     font-weight: lighter;
-    font-size: large;
+    font-size: large; 
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
+
  }
 .team .card img{
   object-fit: cover;
@@ -699,6 +708,7 @@ main {
   color: var(--Off-White);
   font-size: 5rem;
   letter-spacing: 2px;
+  background-color: var(--Night);
 }
 
 .team-section {
@@ -727,6 +737,7 @@ main {
   letter-spacing: 2px;
   margin-top: 3rem;
   margin-left: 0;
+  background-color: var(--Night);
 }
 
 .team .card h3{
@@ -735,8 +746,11 @@ main {
 
   .team .card span{
     color: var(--Off-White);
+    transform: translateY(10px);
+    width: 100vw;
     font-weight: lighter;
     font-size: large;
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);  
   }
 
 .team .card:last-child{
@@ -1095,13 +1109,13 @@ header.projects-header.active {
   width:100%;
   margin:1% 0%;
   padding:0.6% 0%;
-  color:gray;
+  color:var(--Off-White);
   font-size:0.8em;
   }
   
 .footer .row a{
   text-decoration:none;
-  color:gray;
+  color:var(--Off-White);
   transition:0.5s;
   }
   
