@@ -2,32 +2,32 @@ const buildings = [
   {
     buildingName: "Tower McAllister",
     location: "Pasig, Philippines",
-    imageUrl:
-      "assets/build1.jpg"
+    description: "A modern high-rise that embodies sophistication and functionality, Tower McAllister offers a seamless blend of contemporary architecture and cutting-edge engineering. Designed for both residential and commercial use, it prioritizes structural integrity, energy efficiency, and urban elegance.",
+    imageUrl: "assets/build1.jpg"
   },
   {
     buildingName: "Cottage",
     location: "Rizal, Philippines",
-    imageUrl:
-      "assets/build2.jpg"
+    description: "A charming retreat that harmonizes with nature, this cottage is designed for comfort and tranquility. Featuring warm, rustic aesthetics and efficient spatial planning, it provides a cozy yet functional living space, perfect for relaxation and escape from the city.",
+    imageUrl: "assets/build2.jpg"
   },
   {
     buildingName: "McKinley Villa",
     location: "Ilocos Sur, Philippines",
-    imageUrl:
-      "assets/build3.jpg"
+    description: "A luxurious residence that combines timeless design with modern conveniences. McKinley Villa boasts spacious interiors, premium materials, and carefully curated details, creating an elegant and inviting home suited for refined living.",
+    imageUrl: "assets/build3.jpg"
   },
   {
     buildingName: "Balay Highlands",
     location: "Baguio, Philippines",
-    imageUrl:
-      "assets/build4.jpg"
+    description: "Nestled in a scenic landscape, Balay Highlands is a masterpiece of architectural design that maximizes natural light, ventilation, and breathtaking views. This home seamlessly integrates indoor and outdoor spaces, offering a serene and refreshing living experience.",
+    imageUrl: "assets/build4.jpg"
   },
   {
     buildingName: "D.C. House",
     location: "Rizal, Philippines",
-    imageUrl:
-      "assets/build5.jpg"
+    description: "A contemporary home with a sleek and minimalist design, D.C. House is crafted for modern living. Thoughtful space planning, sustainable features, and high-quality finishes ensure a perfect balance of style, functionality, and comfort.",
+    imageUrl: "assets/build5.jpg"
   }
 ];
 
@@ -50,7 +50,7 @@ function renderProjectsTexts(buildings) {
     const html = buildings.map(
       (building) => `<section class="card-text">
       <h3>${building.buildingName}</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nostrum recusandae est sapiente exercitationem similique, distinctio eveniet laudantium iusto! Officiis voluptatum dignissimos perspiciatis. Voluptas ea illo animi culpa sequi ratione illum dolorum sunt non iste asperiores minus quia explicabo, aspernatur amet. Illo autem velit ullam odit explicabo eveniet magnam providen.</p>
+      <p>${building.description}</p>
       </section>`
     );
     document.querySelector(".projects-texts").innerHTML = html.join("");

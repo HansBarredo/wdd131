@@ -34,17 +34,17 @@ const buildings = [
   const services = [
     {
       service: "Architectural and Engineering Design",
-      textContent: "Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.",
+      textContent: "We create innovative and functional designs that blend aesthetics, efficiency, and sustainability. Our team ensures precise planning and seamless integration of architectural and engineering elements for high-quality residential, commercial, and industrial projects.",
       imageUrl:"assets/service1.jpg"
     },
     {
       service: "Consultancy",
-      textContent: "Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.",
+      textContent: "Our expert consultants provide strategic guidance on architectural and engineering solutions, ensuring compliance with industry standards and optimizing project efficiency. We offer feasibility studies, project planning, and technical assessments to support informed decision-making.",
       imageUrl:"assets/service2.jpg"
     },
     {
       service: "Construction",
-      textContent: "Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.",
+      textContent: "From groundbreaking to project completion, we deliver high-quality construction services with precision and efficiency. Our team ensures structural integrity, cost-effectiveness, and timely execution while maintaining the highest safety and quality standards.",
       imageUrl:"assets/service3.jpg"
     },
   ];
@@ -107,21 +107,6 @@ const buildings = [
                 <p>
                   ${service.textContent}
                 </p>
-                <a href="#" class="read-more">
-                  Read more
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </a>
               </div>
             </div>
           </article>`
