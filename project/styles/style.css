@@ -712,6 +712,7 @@ main {
 }
 
 .team-section {
+  position: relative;
   height: 100%;
   width: auto;
   margin-top: 3rem;
@@ -737,6 +738,7 @@ main {
   letter-spacing: 2px;
   margin-top: 3rem;
   margin-left: 0;
+  margin-bottom: 3rem;
   background-color: var(--Night);
 }
 
@@ -746,11 +748,11 @@ main {
 
   .team .card span{
     color: var(--Off-White);
-    transform: translateY(10px);
+    transform: translateY(12px);
     width: 100vw;
     font-weight: lighter;
     font-size: large;
-    background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);  
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 25%, rgb(0, 0, 0) 100%);  
   }
 
 .team .card:last-child{
