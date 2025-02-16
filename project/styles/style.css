@@ -348,6 +348,9 @@ main {
 
 }
 
+.project-feature span {
+  position: absolute;
+}
 
 .card {
   position: relative;
@@ -536,16 +539,17 @@ article:has(:hover) h2 {
 
 .team .card h3{
   color: var(--Madder);
+  margin-bottom: 1.5rem;
 }
 
   .team .card span{
     color: var(--Off-White);
-    transform: translateY(10px);
+    transform: translateY();
     width: 100vw;
     font-weight: lighter;
     font-size: large; 
-    background-image: linear-gradient(rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
-
+    background-color: var(--Night);
+    padding: 1.5rem;
  }
 .team .card img{
   object-fit: cover;
@@ -658,7 +662,7 @@ main {
   position: absolute;
   padding: 2rem;
   bottom: 2rem;
-  color: var(--Off-White);
+  color: var(--Madder);
   letter-spacing: 1px;
   z-index: 3;
 }
@@ -743,16 +747,18 @@ main {
 }
 
 .team .card h3{
-  color: var(--Off-White);
+  color: var(--Madder);
   }
 
   .team .card span{
     color: var(--Off-White);
-    transform: translateY(12px);
-    width: 100vw;
+    transform: translateY();
+    width: 72.5vh;
     font-weight: lighter;
     font-size: large;
-    background-image: linear-gradient(rgba(255, 255, 255, 0) 25%, rgb(0, 0, 0) 100%);  
+    background-color: var(--Night);
+    margin: 0;
+    padding: 1rem;
   }
 
 .team .card:last-child{
