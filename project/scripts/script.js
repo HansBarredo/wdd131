@@ -87,7 +87,7 @@ const buildings = [
       (building) => `<section class="card">
       <div></div>
       <h3>${building.buildingName}</h3>
-      <img src="${building.imageUrl}" alt="Photo of the ${building.buildingName}" loading="lazy" class="image" draggable="false">
+      <img src="${building.imageUrl}" alt="Photo of the ${building.buildingName} project" loading="lazy" class="image" draggable="false">
       </section>`
     );
     document.querySelector(".feature").innerHTML = html.join("");
@@ -100,7 +100,7 @@ const buildings = [
       (service) => `<article>
             <div class="article-wrapper">
               <figure>
-                <img src="${service.imageUrl}" alt="" />
+                <img src="${service.imageUrl}" alt="Image of service offered" />
               </figure>
               <div class="article-body">
                 <h2>${service.service}</h2>
@@ -138,7 +138,7 @@ const buildings = [
       <div></div>
       <h3>${team.teamName}</h3>
       <span>${team.position}</span>
-      <img src="${team.imageUrl}" alt="Photo of the ${team.teamName} Temple" loading="lazy"></img>
+      <img src="${team.imageUrl}" alt="Profile of staff" loading="lazy"></img>
       </section>`
     );
     document.querySelector(".team").innerHTML = html.join("");
